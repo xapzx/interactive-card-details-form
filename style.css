@@ -14,10 +14,6 @@
     --fw-regular: 500;
 }
 
-main {
-    min-height: 100vh;
-}
-
 body {
     min-height: 100vh;
     background-color: var(--clr-neutral-white);
@@ -28,13 +24,24 @@ body {
     place-content: center;
 }
 
+main {
+    min-height: 100vh;
+}
+
+@media (min-width: 650px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
 .card-wrapper {
     position: relative;
     color: var(--clr-neutral-white);
 }
 
 .bg-img {
-    width: 100%;
+    width: 100vw;
 }
 
 .card-front, .card-back {
@@ -89,6 +96,44 @@ body {
     position: absolute;
     right: 13%;
     top: 45.5%;
+}
+
+@media (min-width: 650px) {
+    picture, .bg-img {
+        height: 100%;
+    }
+
+    .card-front, .card-back {
+        width: 28rem;
+        height: 15.5rem;
+    }
+    
+    .card-front {
+        padding: 1.6rem 2rem;
+        left: unset;
+        top: 21%;
+        right: -27%;
+    }
+    
+    .card-back {
+        top: unset;
+        bottom: 19%;
+        right: -46%;
+    }
+
+    .card-logo {
+        width: 5rem;
+    }
+
+    .cc-number {
+        font-size: 1.7rem;
+        letter-spacing: 4px;
+    }
+
+    .cc-info-text {
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+    }
 }
 
 .cc-form {
