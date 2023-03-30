@@ -1,0 +1,15 @@
+:root {
+    /* Primary */
+    --clr-primary-gradient: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+    --clr-primary-red: hsl(0, 100%, 66%);
+
+    /* Neutral */
+    --clr-neutral-white: hsl(0, 0%, 100%);
+    --clr-neutral-grayish-violet-100: hsl(270, 3%, 87%);
+    --clr-neutral-grayish-violet-600: hsl(279, 6%, 55%);
+    --clr-neutral-dark-violet: hsl(278, 68%, 11%);
+
+    --ff-primary: 'Space Grotesk', sans-serif;
+    --fs-base: 1.125rem;
+    --fw-regular: 500;
+}
