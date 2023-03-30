@@ -33,6 +33,10 @@ body {
     color: var(--clr-neutral-white);
 }
 
+.bg-img {
+    width: 100%;
+}
+
 .card-front, .card-back {
     width: 18rem;
     height: 10rem;
@@ -85,6 +89,55 @@ body {
     position: absolute;
     right: 13%;
     top: 45.5%;
+}
+
+.cc-form {
+    display: flex;
+    flex-direction: column;
+    color: var(--clr-neutral-dark-violet);
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    gap: 1rem;
+}
+
+.flex-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.cc-form input {
+    padding: 0.8rem;
+    border: 1px solid var(--clr-neutral-grayish-violet-100);
+    border-radius: 0.5rem;
+}
+
+.cc-form input::placeholder {
+    font-size: 1.1rem;
+    color: var(--clr-neutral-grayish-violet-600);
+}
+
+.card-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+}
+
+.date-input {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.confirm-btn {
+    background-color: var(--clr-neutral-dark-violet);
+    color: var(--clr-neutral-white);
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    margin-top: 0.7rem;
 }
 
 .sr-only {
