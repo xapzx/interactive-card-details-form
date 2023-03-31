@@ -31,6 +31,7 @@ main {
 @media (min-width: 650px) {
     main {
         display: grid;
+        place-items: center;
         grid-template-columns: 1fr 2fr;
     }
 }
@@ -117,7 +118,7 @@ main {
     
     .card-back {
         top: unset;
-        bottom: 19%;
+        bottom: 23%;
         right: -46%;
     }
 
@@ -187,9 +188,16 @@ main {
 
 @media (min-width: 650px) {
     .cc-form {
-        align-content: center;
-        justify-content: center;
-        padding: 0 13.5rem 0 22rem;
+        width: 27rem;
+        margin-left: 7rem;
+    }
+
+    .cc-form label {
+        margin-bottom: 0.5rem; 
+    }
+
+    .confirm-btn {
+        margin-top: 1.5rem;
     }
 }
 
