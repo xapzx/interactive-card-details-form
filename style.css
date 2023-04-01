@@ -33,6 +33,7 @@ main {
         display: grid;
         place-items: center;
         grid-template-columns: 1fr 2fr;
+        max-width: 1440px;
     }
 }
 
@@ -118,7 +119,7 @@ main {
     
     .card-back {
         top: unset;
-        bottom: 23%;
+        bottom: 19%;
         right: -46%;
     }
 
@@ -159,6 +160,11 @@ main {
     border-radius: 0.5rem;
 }
 
+.cc-form input:hover {
+    border-color: var(--clr-neutral-dark-violet);
+    cursor: pointer;
+}
+
 .cc-form input::placeholder {
     font-size: 1.1rem;
     color: var(--clr-neutral-grayish-violet-600);
@@ -186,6 +192,17 @@ main {
     margin-top: 0.7rem;
 }
 
+.cc-number-error {
+    color: var(--clr-primary-red);
+    text-transform: none;
+    font-size: 0.7rem;
+    letter-spacing: normal;
+}
+
+.error-msg-date, .error-msg-cvc, .error-msg-number, .error-msg-name {
+    display: none;
+}
+
 @media (min-width: 650px) {
     .cc-form {
         width: 27rem;
@@ -194,6 +211,10 @@ main {
 
     .cc-form label {
         margin-bottom: 0.5rem; 
+    }
+
+    .cc-form input {
+        font-size: 1.1rem;
     }
 
     .confirm-btn {

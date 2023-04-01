@@ -37,10 +37,12 @@
       <p class="flex-group">
         <label for="name">Cardholder Name</label>
         <input type="text" name="name" id="name" placeholder="e.g. Jane Appleseed">
+        <p class="error-msg-name cc-number-error">Can't be blank</p>
       </p>
       <p class="flex-group">
         <label for="card-number">Card Number</label>
         <input type="text" name="card-number" id="card-number" placeholder="e.g. 1234 5678 9123 0000">
+        <p class="error-msg-number cc-number-error">Wrong format, numbers only</p>
       </p>
       <div class="card-info">
         <div class="exp-date-wrapper flex-group">
@@ -49,10 +51,12 @@
             <input type="text" name="exp-date" id="exp-month" placeholder="MM" size="3">
             <input type="text" name="exp-date" id="exp-year" placeholder="YY" size="3">
           </div>
+          <p class="error-msg-date cc-number-error">Can't be blank</p>
         </div>
         <div class="cvc-wrapper flex-group">
           <label for="cvc">CVC</label>
           <input type="text" name="cvc" id="cvc" placeholder="e.g. 123" size="3">
+          <p class="error-msg-cvc cc-number-error">Can't be blank</p>
         </div>
       </div>
       <button class="confirm-btn">Confirm</button>
