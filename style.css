@@ -34,6 +34,7 @@ main {
         place-items: center;
         grid-template-columns: 1fr 2fr;
         max-width: 1440px;
+        min-width: 1050px;
     }
 }
 
